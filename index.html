@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evergreen Civil Consultant | Engineering & Design</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #1b4332;
+            color: white;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .logo h1 {
+            font-size: 1.5rem;
+            color: #40916c;
+        }
+        .logo span {
+            color: white;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+        }
+        nav a:hover {
+            color: #52b788;
+        }
+        .hero {
+            background: linear-gradient(rgba(27, 67, 50, 0.8), rgba(27, 67, 50, 0.8)), url('https://unsplash.com') no-repeat center center/cover;
+            height: 60vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            max-width: 600px;
+        }
+        .btn {
+            background-color: #52b788;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .btn:hover {
+            background-color: #40916c;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        h3 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+            color: #1b4332;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .service-card {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border-top: 4px solid #52b788;
+        }
+        .service-card h4 {
+            margin-bottom: 10px;
+            color: #1b4332;
+        }
+        .about-section {
+            background-color: #edf7f4;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .about-section p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+        }
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+        .info-box {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .form-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            margin-top: 40px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #1b4332;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
+        }
+        footer {
+            background-color: #1b4332;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 768px) {
+            header { flex-direction: column; text-align: center; }
+            nav { margin-top: 15px; }
+            nav a { margin: 0 10px; }
+            .hero h2 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Evergreen <span>Civil Consultant</span></h1>
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h2>Building Your Vision With Precision</h2>
+        <p>Professional structural engineering, architectural planning, and project management solutions tailored to your infrastructure needs.</p>
+        <a href="#contact" class="btn">Get a Free Consultation</a>
+    </section>
+
+    <section class="container" id="services">
+        <h3>Our Expert Services</h3>
+        <div class="services-grid">
+            <div class="service-card">
+                <h4>Structural Engineering</h4>
+                <p>Safe, durable, and optimized structural designs for residential, commercial, and industrial buildings.</p>
+            </div>
+            <div class="service-card">
+                <h4>Architectural Planning</h4>
+                <p>Innovative 2D blueprints and 3D elevations designed to maximize space utility and modern aesthetics.</p>
+            </div>
+            <div class="service-card">
+                <h4>Project Management</h4>
+                <p>End-to-end site supervision, quality audits, valuation, and timely execution tracking.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="container">
+            <h3>About Our Consultancy</h3>
+            <p>At Evergreen Civil Consultant, we combine engineering excellence with sustainable practices. Our team of experienced civil engineers and surveyors delivers cost-effective, practical solutions that strictly comply with local safety and building regulations.</p>
+        </div>
+    </section>
+
+    <section class="container" id="contact">
+        <h3>Contact Us Today</h3>
+        <div class="contact-info">
+            <div class="info-box">
+                <h4>📍 Our Office</h4>
+                <p>123 Engineering Street, Suite 400<br>Your City, State, ZIP</p>
+            </div>
+            <div class="info-box">
+                <h4>📞 Call Us</h4>
+                <p>+91 98765 43210<br>+91 0123 45678</p>
+            </div>
+            <div class="info-box">
+                <h4>✉️ Email Us</h4>
+                <p>info@evergreencivil.com</p>
+            </div>
+        </div>
+
+        <div class="form-container">
+            <form action="https://formspree.io/f/xlgvrgva" method="POST">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="_replyto" required placeholder="Enter your email address">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+                </div>
+                <div class="form-group">
+                    <label for="message">Project Details</label>
+                    <textarea id="message" name="message" required placeholder="Describe your construction or consulting requirements..."></textarea>
+                </div>
+                <button type="submit" class="btn">Send Inquiry</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Evergreen Civil Consultant. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
